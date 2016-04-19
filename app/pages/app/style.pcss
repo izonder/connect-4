@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 600px;
+    background: #e434ff linear-gradient(120deg, #155799, #e434ff);
+  }
+
+  & > .app-container {
+    width: 800px;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+  }
+}

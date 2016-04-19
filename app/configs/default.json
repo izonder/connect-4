@@ -1,0 +1,22 @@
+{
+  "bounds": {
+    "x": 7,
+    "y": 6
+  },
+  "players": {
+    "player1": {
+      "name": "Mr.Red",
+      "color": "#dc4853",
+      "coin": "R",
+      "active": true,
+      "win": false
+    },
+    "player2": {
+      "name": "Mr.Yellow",
+      "color": "#dcb023",
+      "coin": "Y",
+      "active": false,
+      "win": true
+    }
+  }
+}

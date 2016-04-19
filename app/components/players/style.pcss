@@ -1,0 +1,48 @@
+.players {
+  padding: 40px 0;
+  text-align: center;
+  color: #ffffff;
+
+  & > .player-block {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+
+    &.active:before {
+      content: "Your turn";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 80px;
+      margin-left: -60px;
+      border-top: 1px solid #ffffff;
+      padding: 5px 20px;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    &.win:before {
+      content: "winner";
+      display: block;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      width: 80px;
+      margin-left: -60px;
+      border-bottom: 1px solid #ffffff;
+      padding: 5px 20px;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+  }
+
+  & > .player-particle {
+    width: 20%;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
