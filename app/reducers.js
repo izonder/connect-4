@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 import { routerStateReducer } from 'redux-router';
-//import indexReducer from 'page/index/reducer';
+
+import appReducer from 'page/app/reducer';
 
 export default combineReducers({
-    router: routerStateReducer/*,
-    app: indexReducer.reducer.bind(indexReducer)*/
+    router: routerStateReducer,
+    app: appReducer.reducer.bind(appReducer)
 });

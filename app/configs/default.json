@@ -7,16 +7,13 @@
     "player1": {
       "name": "Mr.Red",
       "color": "#dc4853",
-      "coin": "R",
-      "active": true,
-      "win": false
+      "coin": "R"
     },
     "player2": {
       "name": "Mr.Yellow",
       "color": "#dcb023",
-      "coin": "Y",
-      "active": false,
-      "win": true
+      "coin": "Y"
     }
-  }
+  },
+  "firstTurn": "player1"
 }
