@@ -7,12 +7,12 @@
     "player1": {
       "name": "Mr.Red",
       "color": "#dc4853",
-      "coin": "R"
+      "chip": "R"
     },
     "player2": {
       "name": "Mr.Yellow",
       "color": "#dcb023",
-      "coin": "Y"
+      "chip": "Y"
     }
   },
   "firstTurn": "player1"

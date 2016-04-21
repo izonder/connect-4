@@ -4,7 +4,7 @@ import React from 'react';
 import Control from 'component/control';
 import Mesh from 'component/mesh';
 
-class Game extends React.Component {
+export default class Game extends React.Component {
     static propTypes = {
         columns: React.PropTypes.number.isRequired,
         mesh: React.PropTypes.array.isRequired,
@@ -22,5 +22,3 @@ class Game extends React.Component {
     }
 
 }
-
-export default Game;

@@ -3,7 +3,7 @@ import React from 'react';
 
 import Chip from 'component/chip';
 
-class Mesh extends React.Component {
+export default class Mesh extends React.Component {
     static propTypes = {
         mesh: React.PropTypes.array.isRequired
     };
@@ -20,13 +20,13 @@ class Mesh extends React.Component {
 
     generateRow(row, y) {
         return row.map((unit, x) => {
-            return this.createChip(x, y, unit.code);
+            return this.createChip(x, y, unit.code, unit.win);
         });
     }
 
-    createChip(x, y, v) {
+    createChip(x, y, v, w) {
         return (
-            <Chip key={[x, y].join(':')} x={x} y={y} v={v} />
+            <Chip key={[x, y].join(':')} x={x} y={y} value={v} win={w} />
         );
     }
 
@@ -40,5 +40,3 @@ class Mesh extends React.Component {
     }
 
 }
-
-export default Mesh;

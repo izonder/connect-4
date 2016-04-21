@@ -1,7 +1,7 @@
 import Style from './style.pcss';
 import React from 'react';
 
-class Control extends React.Component {
+export default class Control extends React.Component {
     static propTypes = {
         columns: React.PropTypes.number.isRequired,
         turnAction: React.PropTypes.func.isRequired
@@ -44,5 +44,3 @@ class Control extends React.Component {
     }
 
 }
-
-export default Control;

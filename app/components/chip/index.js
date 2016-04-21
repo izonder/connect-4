@@ -1,20 +1,19 @@
 import Style from './style.pcss';
 import React from 'react';
 
-class Chip extends React.Component {
+export default class Chip extends React.Component {
     static propTypes = {
         x: React.PropTypes.number.isRequired,
         y: React.PropTypes.number.isRequired,
-        v: React.PropTypes.any
+        value: React.PropTypes.any,
+        win: React.PropTypes.bool.isRequired
     };
 
     render() {
-        let {x, y, v} = this.props;
+        let {x, y, value, win} = this.props;
         return(
-            <span className="chip">[ {v || '_'} ]</span>
+            <span className={ win ? 'chip win' : 'chip'}>[ {value || '_'} ]</span>
         );
     }
 
 }
-
-export default Chip;
