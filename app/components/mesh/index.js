@@ -1,5 +1,6 @@
 import Style from './style.pcss';
 import React from 'react';
+import { Sprite } from 'react-pixi';
 
 import Chip from 'component/chip';
 
@@ -37,6 +38,9 @@ export default class Mesh extends React.Component {
                 {this.generateMesh(mesh)}
             </div>
         );
+        /*return (
+            <Sprite backgroundColor={'#ff0000'} />
+        );*/
     }
 
 }

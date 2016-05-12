@@ -1,5 +1,6 @@
 import Style from './style.pcss';
 import React from 'react';
+import { Sprite } from 'react-pixi';
 
 export default class Control extends React.Component {
     static propTypes = {
@@ -41,6 +42,9 @@ export default class Control extends React.Component {
         return(
             <div className="control">{this.generateControlButtons()}</div>
         );
+        /*return (
+            <Sprite backgroundColor={'#ff0000'} />
+        );*/
     }
 
 }

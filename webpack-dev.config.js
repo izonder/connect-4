@@ -20,6 +20,10 @@ module.exports = {
         publicPath : '/build/'
     },
 
+    node: {
+        fs: 'empty'
+    },
+
     module: {
         loaders: [
             {
