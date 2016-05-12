@@ -9,10 +9,18 @@ export default class Chip extends React.Component {
         win: React.PropTypes.bool.isRequired
     };
 
+    getClassName(value, win) {
+        return [
+            'chip',
+            value ? 'chip-' + value.toLowerCase() : '',
+            win ? 'chip--win' : ''
+        ].join(' ');
+    }
+
     render() {
         let {x, y, value, win} = this.props;
         return(
-            <span className={ win ? 'chip win' : 'chip'}>[ {value || '_'} ]</span>
+            <div className={this.getClassName(value, win)}></div>
         );
     }
 

@@ -28,7 +28,7 @@ export default class Control extends React.Component {
             code = salt.substr(i, 1);
 
         return (
-            <a href="#" key={i} onClick={(e)=>{this.clickAction(e, i)}}>[ {code} ]</a>
+            <a href="#" className="control-button" key={i} onClick={(e)=>{this.clickAction(e, i)}}>{code}</a>
         );
     }
 
